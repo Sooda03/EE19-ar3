@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #055699;
+    --complementary: #020b58;
+}
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    padding: 2rem;
+    background-color: var(--complementary);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-auto-flow: column;
+}
+
+aside ul {
+    font-size: 20px;
+    list-style: none;
+}
+
+section.grid {
+
+}
+
+.grid p {
+    font-size: 200%;
+    background-color: #0c1ebd;
+    margin-right: 820px;
+    padding: 10px;
+    font-family: 'Concert One', cursive;
+}
+
+.grid button {
+    font-size: 200%;
+    margin-left: 45px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card {
+    width: 200px;
+}
+
+.card img {
+    width: 100%;
+}
+
+
+footer {
+    border-radius: 5px;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    padding: 3rem 0 3rem 0;
+    background-color: var(--main-color);
+    color: var(--complementary);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: var(--complementary);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -37,3 +37,14 @@ body {
 .kontainer button:hover {
     background-color: #88006a;
 }
+
+.kontainer a {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 15px; 
+    padding-top: 10px;
+}
+
+.kontainer a:hover {
+    color: magenta;
+}

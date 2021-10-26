@@ -1,0 +1,19 @@
+
+body {
+    background: url("./bilder/background3.jpg");
+    background-size: 100%;
+}
+
+div {
+    font-family: 'Racing Sans One', cursive;
+    background-color: rgba(3, 145, 10, 0.575);
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 100px;
+    padding: 20px;
+    outline: #00881d solid 3px;
+}
+
+div a {
+    color: rgb(4, 0, 59);
+}

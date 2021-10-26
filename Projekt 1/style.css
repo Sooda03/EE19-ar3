@@ -2,3 +2,52 @@ body {
     background: url(./bilder/Background1.png);
     background-size: 100%;
 }
+
+.kontainer {
+    background-color: rgba(0, 173, 0, 0.541);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.kontainer h1 {
+    font-family: 'Comfortaa', cursive;
+    color: rgb(0, 68, 0);
+    font-size: 40px;
+}
+
+.kontainer p {
+    font-family: 'Space Mono', monospace;
+}
+
+.links a {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(52, 109, 55);
+    font-family: 'Comfortaa', cursive;
+    color: rgb(1, 26, 0);
+    font-size: 20px;
+}
+.links a:hover {
+    color: rgb(0, 68, 0);  
+}
+
+.extra {
+    display: grid;
+    grid-template-columns: 200px 600px 400px;
+    font-family: 'Comfortaa', cursive;
+    background-color: rgba(0, 173, 0, 0.541);
+    padding: 10px;
+    padding-top: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.extra img {
+    background-color: rgb(0, 133, 0);
+    outline: rgb(0, 104, 22) solid 5px;
+    border-radius: 10px;
+}

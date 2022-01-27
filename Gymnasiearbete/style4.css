@@ -1,0 +1,27 @@
+body {
+    background-color: #649ff6;
+}
+
+.kontainer {
+    background-color: rgba(31, 13, 196, 0.651);
+    font-family: 'Racing Sans One', cursive;
+    outline: #004aac solid 3px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 200px;
+    margin-left: 520px;
+    margin-right: 520px;
+}
+
+.kontainer a {
+    color: #1f0112;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 20px;
+    padding-left: 70px;
+}
+
+.kontainer a:hover {
+    color: #003f9e;
+}

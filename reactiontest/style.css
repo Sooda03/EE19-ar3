@@ -1,0 +1,72 @@
+body {
+    background: url(./background.jpg);
+    background-size: 100%;
+}
+
+.container {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container h1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: #FFFFFF;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 380px;
+    margin-right: 400px;
+}
+
+.container h1:hover{
+    outline: solid 2px white;
+}
+
+.container p {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #16013de3;
+    color: #FFFFFF;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    outline: solid 2px white;
+}
+
+.container p:hover {
+    background-color: #160133;
+    padding: 22px;
+    outline: solid 2px rgba(205, 184, 255, 0.678);
+}
+
+.container img {
+    margin-left: 385px;
+    background-color: #160133;
+    padding: 5px;
+}
+
+.container img:hover {
+    border-radius: 5px;
+    outline: solid 2px #FFFFFF;
+
+}
+
+button {
+    margin-left: 385px;
+    background-color: #160133;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+button a {
+    color: #FFFFFF;
+}
+
+button:hover {
+    outline: solid 2px white;
+    border-radius: 0px;
+}

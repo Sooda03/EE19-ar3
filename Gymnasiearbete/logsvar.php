@@ -25,10 +25,18 @@
             }
             echo "<p> Du glömde ditt användarnamn";
         } else {
+            $rader = file("accounts.txt");
+            foreach ($rader as $rad) {
+                $delar = explode("<br>", $rad);
+                if ($username == $delar[0] && $gmail == $delar[1] && $password == $delar[2]) {
+                    echo "<a href=\"./typingtest.html\">Till sidan</a>";
+                    break;
+                }
+            }
+
             echo "<p> Välkommen $username!";
         }
         ?>
-            <a href="...">Till sidan</a>
     </div>
 </body>
 </html>

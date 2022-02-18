@@ -1,0 +1,72 @@
+:root{
+    --main-color: #33658A;
+    --complementary: #758E4F;
+    }
+
+    body{
+    background: url(./bilder/background4.jpg);
+    background-size: 100%;
+    }
+    .timer{
+        font-family: 'Patua One', cursive;
+        background-color: rgba(218, 123, 0, 0.644);
+        padding-left: 100px;
+        outline: solid 1px black;
+    }
+    .kontainer {
+    margin: auto;
+    margin-left: 200px;
+    font-family: 'Patua One', cursive;
+    background-color: #e6daa3;
+    padding-bottom: 60px;
+    border-radius: 20px;
+    margin-right: 200px;
+    outline: solid 3px rgb(53, 1, 1);
+    }
+
+    h1 {
+    font-size: 50px;
+    display: grid;
+    margin-left: 125px;
+    color: #6d0202;
+    }
+
+    button{
+    display: grid;
+    width: 100px;
+    height: 20px;
+    margin-left: 130px;
+    margin-bottom: 20px;
+    background-color: #a83e00;
+    font-family: 'Patua One', cursive;
+    border-radius: 3px;
+    }
+
+    button:hover {
+    background-color: #a87a36;
+    border-radius: 0px;
+    }
+
+    input{
+    height: 60px;
+    width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 35px;
+    display: block;
+    }
+    .output{
+    margin: auto;
+    height: 120px;
+    width: 600px;
+    font-size: 35px;
+    background-color: whitesmoke;
+    overflow: hidden;
+    }
+    .timer{
+        display: inline-flex;
+        align-items: center;
+        font-size: 50px;
+        height: 70px;
+        width: 200px;
+    }

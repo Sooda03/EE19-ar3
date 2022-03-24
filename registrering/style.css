@@ -2,9 +2,20 @@
     width: 800px;
     padding: 2em;
     margin: 1em auto;
-    background-color: #aaaaaa;
+    background-color: #afe2ff;
+    border-radius: 50px;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+    margin-left: 1em;
+}
+.kontainer ul {
+    margin-top: 2em;
+    margin-left: 2em;
 }
 form {
+    border-radius: 20px;
     margin: 2em;
     padding: 2em;
     background: #ffffff;

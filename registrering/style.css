@@ -20,3 +20,8 @@ form {
     padding: 2em;
     background: #ffffff;
 }
+
+.nav-link-active{
+    border-radius: 20px;
+    padding: 1em;
+    background-color: rgb(255, 255, 255);}

@@ -24,21 +24,27 @@ session_start();
         <h1>Bloggen, Logga in</h1>
         <nav>
             <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link" href="./registrera.php">Registrera</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Logga in</a>
+                <?php
+                if ($_SESSION['inloggad'] == false) {
+                ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./registrera.php">Registrera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-active" aria-current="page" href="#">Logga in</a>
                     <?php
-                    if ($_SESSION['inloggad'] == true) {
+                } else {
                     ?>
-                <li class="nav-item">
-                    <a class="nav-link" href="./logout.php">Logga ut</a>
-                </li>
-            <?php
-                    }
-            ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./logout.php">Logga ut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="./admin.php">Admin</a>
+                    </li>
             </ul>
+        <?php
+                }
+        ?>
         </nav>
         <main>
             <form action="loggain.php" method="POST">
@@ -55,7 +61,7 @@ session_start();
                         <input type="password" class="form-control" id="inputLösenord" name="lösenord">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Registrera</button>
+                <button type="submit" class="btn btn-primary">Logga in</button>
             </form>
             <?php
             // Ta emot data från formuläret
@@ -88,6 +94,8 @@ session_start();
 
                         // Kom ihåg att vi lyckats logga in
                         $_SESSION['inloggad'] = true;
+
+                        header("Location: admin.php");
                     } else {
                         echo "<p class=\"alert alert-warning\">Epost eller lösenordet stämmer inte</p>";
                     }

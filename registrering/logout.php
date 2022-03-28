@@ -24,20 +24,34 @@ session_start();
         <h1>Bloggen</h1>
         <nav>
             <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link" href="./registrera.php">Registrera</a>
-                </li>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./loggain.php">Logga in</a>
-                </li>
-                <a class="nav-link active" aria-current="page" href="#">Logga ut</a>
+                <?php
+                if ($_SESSION['inloggad'] == false) {
+                ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./registrera.php">Registrera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./loggain.php">Logga in</a>
+                    <?php
+                } else {
+                    ?>
+                    <li class="nav-item">
+                        <a class="nav-link-active" aria-current="page" href="#">Logga ut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./admin.php">Admin</a>
+                    </li>
             </ul>
+        <?php
+                }
+        ?>
         </nav>
         <main>
             <?php
-                $_SESSION['inloggad'] = false;
-                echo "<p class=\"alert alert-warning\">Du är inte inloggad!</p>";
+            $_SESSION['inloggad'] = false;
+            echo "<p class=\"alert alert-warning\">Du är inte inloggad!</p>";
+
+            header("Location: loggain.php");
 
             ?>
         </main>

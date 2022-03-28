@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Learning Vue</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script defer src="app.js"></script>
 </head>
 <body>
-    <h1>Hello Vue :)</h1>
-
-    <div id="app">
-        <p>{{ title }} - {{ author }} - {{ age }}</p>
+    <div id="app-root">
+        <div v-for="album in albums" class="album">
+        <input type="text" v-model="firstName" />
+        <input type="text" v-model="lastName" />
+        </div>
+        <button @click="reverse" v-if="showBUtton">Reverse</button>
+        <h1>{{firstName + " " + lastName}}</h1>
     </div>
-    
-    <script src="app.js"></script>
 </body>
 </html>

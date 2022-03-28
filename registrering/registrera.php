@@ -1,6 +1,9 @@
 <?php
 include "konfigdb.php";
 session_start();
+if (!isset($_SESSION['inloggad'])) {
+    $_SESSION['inloggad'] = false;
+}
 ?>
 
 <!DOCTYPE html>
@@ -24,26 +27,27 @@ session_start();
         <h1>Bloggen</h1>
         <nav>
             <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Registrera</a>
-                </li>
                 <?php
                 if ($_SESSION['inloggad'] == false) {
                 ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="./loggain.php">Logga in</a>
+                        <a class="nav-link-active" aria-current="page" href="#">Registrera</a>
                     </li>
-                <?php
-                }
-                if ($_SESSION['inloggad'] == true) {
-                ?>
-                <li class="nav-item">
-                    <a class="nav-link" href="./logout.php">Logga ut</a>
-                </li>
-                <?php
-                }
-                ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./loggain.php">Logga in</a>
+                    <?php
+                } else {
+                    ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./logout.php">Logga ut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./admin.php">Admin</a>
+                    </li>
             </ul>
+        <?php
+                }
+        ?>
         </nav>
         <main>
             <form action="registrera.php" method="POST">

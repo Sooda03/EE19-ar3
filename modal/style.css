@@ -1,0 +1,22 @@
+/*body {
+    background: url("./explode.gif");
+    background-size: 100% 300%;
+}
+
+body:hover {
+    background: url("./egg.jpg");
+    background-size: 100% 300%;
+}
+
+h1 {
+    color: rgb(0, 162, 255);
+}
+*/
+.container {
+    margin-top: 20px;
+    background-color: #f2f2f2ce;
+    padding: 3em;
+    width: 700px;
+    border-radius: 30px;
+    outline: solid 2px rgb(0, 162, 255);
+}

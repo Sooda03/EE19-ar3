@@ -1,0 +1,10 @@
+body {
+    width: 700px;
+    padding: 2em;
+    margin: 3em auto;
+    background: #fff;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 2px solid #a0a0a0;
+    color: #4e4e4e;
+}

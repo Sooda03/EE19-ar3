@@ -1,0 +1,100 @@
+body {
+    background: url("./images/omid-armin-nACf6L_pXq8-unsplash.jpg");
+    background-size: 70em;
+}
+
+h1 {
+    text-align: center;
+    font-weight: lighter;
+    background-color: #EAD7d7;
+    color: #6d466b;
+    font-family: 'Press Start 2P', cursive;
+    padding: 1em;
+    border-radius: 10px;
+    outline: groove 5px #b46091;
+}
+
+.gallery {
+    display: flex;
+    gap: 85px;
+    margin: 10px;
+}
+
+.games {
+    font-size: small;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+    color: #412234;
+    background-color: #b49FCC;
+    width: 20%;
+    outline: solid 5px #6d466b;
+}
+
+.games img {
+    width: 100%;
+    height: 30%;
+}
+
+.games a {
+    font-size: medium;
+    color: #6d466b;
+    margin-left: 35px;
+}
+
+.games a:hover {
+    font-size: large;
+    color: #412234;
+    margin-left: 30px;
+}
+
+.externalsites h1 {
+    text-align: center;
+    font-weight: lighter;
+    background-color: #EAD7d7;
+    color: #6d466b;
+    font-family: 'Press Start 2P', cursive;
+    padding: 1em;
+    border-radius: 10px;
+    outline: groove 5px #b46091;
+}
+
+.imagetext {
+    background-color: #b49FCC;
+    color: #412234;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.imagetext img {
+    margin-left: 900px;
+    outline: groove 5px #412234;
+    border-radius: 10px;
+}
+
+.imagetext a {
+    font-size: larger;
+}
+
+.imagetext a:hover {
+    color: #b46091;
+}
+/*}
+
+.externalsites a {
+    background-color: #b49FCC;
+    color: #412234;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    outline: groove 3px #412234;  
+    margin-left: 10px;
+}
+
+.externalsites img {
+    outline: groove 5px #b46091;
+    border-radius: 10px;
+    background-color: #b49FCC;
+    padding: 10px;
+    margin-left: 400px;
+}*/
+

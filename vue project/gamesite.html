@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script defer src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Games and their rankings</h1>
+    <div class="app" id="app-root">
+        <div class="gallery">
+            <div class="games" v-for="game in games">
+                <img :src="game.img" :alt="game.name">
+                <h2>{{game.name}}</h2>
+                <h2>{{game.company}}</h2>
+                <h2>{{game.rating}} &#8902;</h2>
+                <h2>{{game.release}}</h2>
+                <a :href="game.link">>Read more<</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

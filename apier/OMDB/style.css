@@ -1,0 +1,9 @@
+body {
+    background: rgb(0, 10, 114);
+}
+.kontainer {
+    width: 90%;
+    margin: auto;
+    padding: 2em;
+    background: #FFF;
+}
